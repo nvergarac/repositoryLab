@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Interest Calculator</title>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="maindiv">
+            <h1>Simple Interest Calculator</h1>
+            <form class="form1">
+                <ul>
+                    <li>
+                        <label for="Amount"> Amount </label>
+                        <input id="Amount" type="number" name="Amount"> <br>
+                    </li>
+                    <li>
+                        <label for="Rate"> Rate </label>
+                        <input id="Rate" type="range" min="1" max="20" step="0.25" value="10.25" name="Rate" onchange="updateRate()">
+                        <span id="rate_value"> </span>
+                    </li>
+                    <li>
+                        <label for="No. of Years"> No. of Years </label>
+                        <select id="Years">
+                            <option value="1"> 1 </option>
+                            <option value="2"> 2 </option>
+                            <option value="3"> 3 </option>
+                            <option value="4"> 4 </option>
+                            <option value="5"> 5 </option>
+                            <option value="6"> 6 </option>
+                            <option value="7"> 7 </option>
+                            <option value="8"> 8 </option>
+                            <option value="9"> 9 </option>
+                            <option value="10"> 10 </option>
+                        </select>
+                    </li>
+                    <li>
+                        <input type="button" value="Compute Interes" onclick="compute('calculate')"/>
+                        <br>
+                        <div id="boxBack"><div id="boxWrap">
+                            <div id="boxTxt"></div>
+                            <br>
+                            <input type="button" value="Ok" onclick="compute()"/>
+                        </div></div>
+                        <br>
+                    </li>
+                </ul>
+            </form>
+            <footer>
+                &#169; This Calculator Belongs To Nelson Vergara C.
+            </footer>
+        </div>
+    </body>
+</html>
