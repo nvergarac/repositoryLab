@@ -101,6 +101,10 @@ form {
     color: black;
   }
 
+  .highlight {
+    background-color: yellow;
+  }
+
 /* (A) BACKGROUND */
 #boxBack {
     /* (A1) FULLSCREEN */
